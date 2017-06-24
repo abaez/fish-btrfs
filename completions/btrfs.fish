@@ -24,6 +24,15 @@ __fish_btrfs_sub subvolume find-new "List the recently modified files in a files
 __fish_btrfs_sub subvolume show "Set the default subvolume of a filesystem."
 __fish_btrfs_sub subvolume sync "Wait until given subvolume are completely removed from the filesystem."
 
+# filesystem
+__fish_btrfs_sub filesystem df "Show space usage information for a mount point."
+__fish_btrfs_sub filesystem du "Summarize disk usage of each file."
+__fish_btrfs_sub filesystem show "Show the structure of a filesystem."
+__fish_btrfs_sub filesystem sync "Force a sync on a filesystem."
+__fish_btrfs_sub filesystem defragment "Defragment a file or a directory."
+__fish_btrfs_sub filesystem resize "Resize a filesystem."
+__fish_btrfs_sub filesystem label "Get or change the label of a filesystem."
+__fish_btrfs_sub filesystem usage "Show detailed information about internal filesystem usage."
 
 
 
