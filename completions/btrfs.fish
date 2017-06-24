@@ -9,19 +9,20 @@ complete -xc btrfs -l help -d "use --help as an argument for information on a sp
 complete -xc btrfs -l version -d "Display btrfs-progs version."
 
 
+function __fish_btrfs_sub
+  complete -c btrfs -xn "__fish_seen_subcommand_from $argv[1]" -xa $argv[2] -d $argv[3]
+end
+
 # subvolume
-
-complete -c btrfs -n "__fish_seen_subcommand_from subvolume" -xa create -d "Create a subvolume."
-complete -c btrfs -n "__fish_seen_subcommand_from subvolume" -xa delete -d "Delete a subvolume."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa list -d "List subvolumes."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa snapshot -d "Create a snapshot of the subvolume."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa snapshot -d "Create a snapshot of the subvolume."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa get-default -d "Get the default subvolume of a filesystem."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa set-default -d "Set the default subvolume of a filesystem."
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa find-new -d "List the recently modified files in a filesystem"
-complete -c btrfs -xn "__fish_seen_subcommand_from subvolume" -xa show -d "Set the default subvolume of a filesystem."
-
-
+__fish_btrfs_sub subvolume create "Create a subvolume."
+__fish_btrfs_sub subvolume delete "Delete a subvolume."
+__fish_btrfs_sub subvolume list "List subvolumes."
+__fish_btrfs_sub subvolume snapshot "Create a snapshot of the subvolume."
+__fish_btrfs_sub subvolume get-default "Get the default subvolume of a filesystem."
+__fish_btrfs_sub subvolume set-default "Set the default subvolume of a filesystem."
+__fish_btrfs_sub subvolume find-new "List the recently modified files in a filesystem."
+__fish_btrfs_sub subvolume show "Set the default subvolume of a filesystem."
+__fish_btrfs_sub subvolume sync "Wait until given subvolume are completely removed from the filesystem."
 
 
 
