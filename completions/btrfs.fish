@@ -71,6 +71,23 @@ __fish_btrfs_sub inspect-internal dump-tree "Dump tree structures from a given d
 __fish_btrfs_sub inspect-internal dump-super "Dump superblock from a device in a textual form."
 __fish_btrfs_sub inspect-internal tree-stats "Print various stats for trees."
 
+# property
+__fish_btrfs_sub property get "Gets a property from a btrfs object."
+__fish_btrfs_sub property set "Sets a property from a btrfs object."
+
+# quota
+__fish_btrfs_sub quota enable "Enable a subvolume quota support for a filesystem."
+__fish_btrfs_sub quota disable "Disable a subvolume quota support for a filesystem."
+__fish_btrfs_sub quota rescan "Trash all qgroup numbers and scan the metadata again with the current config."
+
+# qgrip
+__fish_btrfs_sub qgrip assign "Assign SRC as the child qgroup of DST."
+__fish_btrfs_sub qgrip remove "Remove a child qgroup SRC from DST."
+__fish_btrfs_sub qgrip create "Create a subvolume quota group."
+__fish_btrfs_sub qgrip destroy "Destroy a subvolume quota group."
+__fish_btrfs_sub qgrip show "Show subvolume quota groups."
+__fish_btrfs_sub qgrip limit "Set the limits a subvolume quota group."
+
 
 
 
