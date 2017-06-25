@@ -50,6 +50,12 @@ __fish_btrfs_sub device ready "Check device to see if it has all of its devices 
 __fish_btrfs_sub device stats "Show device IO error statistics."
 __fish_btrfs_sub device usage "Show detailed information about internal allocations in devices."
 
+# scrub
+__fish_btrfs_sub scrub start "Start a new scrub."
+__fish_btrfs_sub scrub cancel "Cancel a running scrub."
+__fish_btrfs_sub scrub resume "Resume previously canceled or interrupted scrub."
+__fish_btrfs_sub scrub status "Show status of running or finished scrub"
+
 
 
 
