@@ -61,6 +61,16 @@ __fish_btrfs_sub rescue chunk-recover "Recover the chunk tree by scanning the de
 __fish_btrfs_sub rescue super-recover "Recover bad superblocks from good copies."
 __fish_btrfs_sub rescue zero-log "Clear the tree log."
 
+# inspect-internal
+__fish_btrfs_sub inspect-internal inode-resolve "Get file system paths for the given inode."
+__fish_btrfs_sub inspect-internal logical-resolve "Get file system paths for the given logical address."
+__fish_btrfs_sub inspect-internal subvolid-resolve "Get file system paths for the given subvolume ID."
+__fish_btrfs_sub inspect-internal rootit "Get the tree ID of the containing subvolume of path."
+__fish_btrfs_sub inspect-internal min-dev-size "Get the minium size the device can be shrunk to."
+__fish_btrfs_sub inspect-internal dump-tree "Dump tree structures from a given device."
+__fish_btrfs_sub inspect-internal dump-super "Dump superblock from a device in a textual form."
+__fish_btrfs_sub inspect-internal tree-stats "Print various stats for trees."
+
 
 
 
