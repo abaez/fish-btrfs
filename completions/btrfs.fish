@@ -88,6 +88,7 @@ __fish_btrfs_sub qgrip destroy "Destroy a subvolume quota group."
 __fish_btrfs_sub qgrip show "Show subvolume quota groups."
 __fish_btrfs_sub qgrip limit "Set the limits a subvolume quota group."
 
-
-
-
+# replace
+__fish_btrfs_sub replace start "Replace device of a btrfs filesystem."
+__fish_btrfs_sub replace status "Print status and progress information of a running device replace."
+__fish_btrfs_sub replace cancel "Canel a running device replace operation."
