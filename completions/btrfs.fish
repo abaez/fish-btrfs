@@ -34,6 +34,13 @@ __fish_btrfs_sub filesystem resize "Resize a filesystem."
 __fish_btrfs_sub filesystem label "Get or change the label of a filesystem."
 __fish_btrfs_sub filesystem usage "Show detailed information about internal filesystem usage."
 
+# balance
+__fish_btrfs_sub balance start "Balance chunks across the devices."
+__fish_btrfs_sub balance pause "Pause running balance."
+__fish_btrfs_sub balance cancel "Cancel running or paused balance."
+__fish_btrfs_sub balance resume "Resume interrupted balance."
+__fish_btrfs_sub balance status "Show status of running or paused balance."
+
 
 
 
