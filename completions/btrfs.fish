@@ -41,6 +41,15 @@ __fish_btrfs_sub balance cancel "Cancel running or paused balance."
 __fish_btrfs_sub balance resume "Resume interrupted balance."
 __fish_btrfs_sub balance status "Show status of running or paused balance."
 
+# device
+__fish_btrfs_sub device add "Add a device to a filesystem."
+__fish_btrfs_sub device delete "Remove a device from a filesystem."
+__fish_btrfs_sub device remove "Remove a device from a filesystem."
+__fish_btrfs_sub device scan "Scan devices for a btrfs filesystem."
+__fish_btrfs_sub device ready "Check device to see if it has all of its devices in cache for mounting."
+__fish_btrfs_sub device stats "Show device IO error statistics."
+__fish_btrfs_sub device usage "Show detailed information about internal allocations in devices."
+
 
 
 
