@@ -56,6 +56,14 @@ __fish_btrfs_sub scrub cancel "Cancel a running scrub."
 __fish_btrfs_sub scrub resume "Resume previously canceled or interrupted scrub."
 __fish_btrfs_sub scrub status "Show status of running or finished scrub"
 
+# check
+__fish_btrfs_sub check "Check structural integrity of a filesytem (unmounted)."
+
+# rescue
+__fish_btrfs_sub rescue chunk-recover "Recover the chunk tree by scanning the devices one by one."
+__fish_btrfs_sub rescue super-recover "Recover bad superblocks from good copies."
+__fish_btrfs_sub rescue zero-log "Clear the tree log."
+
 
 
 
